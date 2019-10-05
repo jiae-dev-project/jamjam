@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="23dp"
+    android:layout_marginLeft="1dp"
+    android:layout_marginRight="1dp"
+    android:layout_marginBottom="1dp"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bt_device_list_background"
+    android:id="@+id/device_list">
+    <TextView android:id="@+id/title_paired_devices"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_paired_devices"
+        android:visibility="gone"
+        android:background="@drawable/pair_other_back"
+        android:textColor="#fff"
+        android:paddingLeft="5dp"
+    />
+    <ListView android:id="@+id/paired_devices"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stackFromBottom="true"
+        android:layout_weight="1" 
+    />
+    <TextView android:id="@+id/title_new_devices"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_other_devices"
+        android:visibility="gone"
+        android:background="@drawable/pair_other_back"
+        android:textColor="#fff"
+        android:paddingLeft="5dp"
+    />
+
+    <ListView
+        android:id="@+id/new_devices"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stackFromBottom="true" 
+        android:layout_weight="1"/>
+
+    <Button android:id="@+id/button_scan"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/scan_device_back"
+        android:text="@string/button_scan" 
+        android:textColor="#ffffff"
+        android:layout_weight="0"
+    />
+</LinearLayout>
